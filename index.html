@@ -1,424 +1,425 @@
 
 <html><head>
-  <title>Runhao Zeng</title>
-  <link rel="shortcut icon" href="imgs/favicon.ico">
-
-  <style type="text/css">
-  body {
-      margin-top: 30px;
-      margin-bottom: 20px;
-      margin-left: 0px;
-      margin-right: 0px;
-    width: 100%;
-  }
-  p {
-      margin-top: 0px;
-      margin-bottom: 0px;
-  }
-
-  .caption {
-      font-size: 25px;
-      font-weight: normal;
-      color: #000;
-      font-family:  Arial, sans-serif;
-  }
-  .caption-1 {
-      font-size: 18px;
-      font-family:  Arial, sans-serif;
-    margin-bottom: 3px;
-  }
-  .caption-2 {
-      font-size: 16px;
-      font-family:  Arial, sans-serif;
-      font-weight: bold;
-    margin-bottom: 1px;
-      color: #000079;
-  }
-  .caption-3 {
-      font-size: 16px;
-      font-family:  Arial, sans-serif;
-      font-weight: bold;
-    margin-bottom: 1px;
-      color: #F00;
-  }
-
-  .caption-4 {
-      font-size: 16px;
-      font-family:  Arial, sans-serif;
-      color: #000079;
-  }
-  .content {
-      font-size: 16px;
-      font-family:  Arial, sans-serif;
-    margin-bottom: 5px;
-      text-align: justify;
-  }
-  .content a {
-      font-size: 16px;
-      font-family:  Arial, sans-serif;
-    margin-bottom: 10px;
-      color: #000;
-
-  }
-  .content strong a {
-      font-size: 16px;
-    font-weight: initial;
-      font-family:  Arial, sans-serif;
-    margin-bottom: 10px;
-      color: #000079;
-  }
-
-  .author {
-    font-size: 16px;
-    font-style:oblique;
-    font-family:  Arial, sans-serif;
-    text-align: justify;
-    margin-bottom: 1px;
-  }
-  .author a {
-    font-size: 16px;
-    font-style:oblique;
-    font-family:  Arial, sans-serif;
-    color: #000;
-    margin-bottom: 1px;
-  }
-  .author strong a {
-    font-size: 16px;
-    font-style:oblique;
-    font-weight: initial;
-    font-family:  Arial, sans-serif;
-    color: #000079;
-  }
-
-  .title-small {
-    margin-top: 20px;
-    margin-bottom: 20px;
-      font-size: 20px;
-    font-weight: bold;
-    font-family:  Arial, sans-serif;	/* font-weight: bold; */
-      color: #000;
-  }
-  .title-large {
-      font-size: 24px;
-    margin-bottom: 10px;
-    font-family:  Arial, sans-serif;
-    font-weight: bold;
-      color: #000;
-  }
-  .margin {
-      font-size: 10px;
-      line-height: 10px;
-  }
-  .margin-small {
-      font-size: 5px;
-      line-height: 5px;
-  }
-  .margin-large {
-      font-size: 16px;
-      line-height: 16px;
-  }
-  a:link {
-      text-decoration: none;
-  }
-  a:visited {
-      text-decoration: none;
-  }
-  content a:link {
-      text-decoration: none;
-  }
-  content a:visited {
-      text-decoration: none;
-  }
-  a:hover {
-      text-decoration: underline;
-  }
-  a:active {
-      text-decoration: underline;
-      color: #000000;
-      font-family:  Tahoma, Geneva, sans-serif;
-  }
-  strong a:active {
-      text-decoration: underline;
-      color: #000000;
-  }
-  img
-  {
-   border-color: black;
-  }
-
-  #pubs .pubs-list {
-      display: none;
-  }
-
-  #pubs.show-by-date .pubs-list.by-date {
-      display: block;
-  }
-
-  #pubs.show-by-topic .pubs-list.by-topic {
-      display: block;
-  }
-
-  .project-layout{
-    position: relative;
-    margin-top: 8px;
-  }
-
-  .project-layout .title-large{
-    position: absolute;
-    top:0;
-    left:0;
-  }
-
-  .project {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
-
-  .project h3{
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 16px;
-  }
-
-  .project p{
-    font-size: 18px;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-
-  .project .link{
-    width:100%;
-    line-height: 1.5;
-  }
-
-  .project .intro {
-      width: 50%;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-  }
-
-  .project .intro .more {
-      /* background-color: rgb(0, 0, 238); */
-      background-color: #0d47a1;
-      border: none;
-      color: white;
-      padding: 8px 26px;
-      margin: 5px;
-      margin-top: 20px;
-      border-radius: 5px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      transition: 0.3s;
-  }
-
-  .project .intro .more:hover{
-    opacity: 0.7;
-  }
-
-  .project .preview {
-    /* object-fit: none; */
-    outline: none;
-  }
-  </style>
-  <meta http-equiv="Content-Type" content="text/html; charset=gbk"></head>
-  <script src="scroll.js"></script>
-  <script>
-    // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    // ga('create', 'UA-53682931-1', 'auto'); // maybe a new account of google analysis is needed(https://www.google-analytics.com).
-    // ga('send', 'pageview');
-    function showPubs(id) {
-    var pubs = document.getElementById('pubs');
-      pubs.classList.toggle('show-by-date', id === 0)
-      pubs.classList.toggle('show-by-topic', id === 1)
-      return true;
-    }
-  </script>
-
-  <body><div style="width: 1085px; margin: auto;">
-
-  <table border="0" width="100%" style="margin: auto">
-    <tbody>
-
-      <tr>
-
-      <td width="185"><table>
-              <tr><td>
-              <a href="imgs/RunhaoZeng.jpg"><img src="imgs/RunhaoZeng.jpg"  height="180" alt="RunhaoZeng;"></td></tr>
-              </table></td>
-      <td width="15"></td>
-      <td></td>
-      <td><table border="0" width="100%">
-        <tbody>
-        <tr height="10">
-          <td colspan="2"></td></tr>
-
-
-           <tr height="20">
-          <td>
-             <!-- add as more information here as you like, and this line is also an example of html annoation -->
-             <p class="caption">Runhao Zeng</p>
-
-             <!-- <p class="caption">Runhao Zeng&nbsp;<span class="content"><a href="mailto:zengrh@szu.edu.com">zengrh[AT]csail[dot]edu[dot]com</a></span></p> -->
-             <!-- <p class="content"><a href="mailto:zengrh@csail.edu.com">zengrh[AT]szu[dot]edu[dot]cn</a></p> -->
-             <!-- <p class="content"><b>Computer Science and Artificial Intelligence Laboratory</b></p> -->
-             <br>
-          </td>
-        </tr>
-        <!-- <table border="0">
-            <tbody> -->
-              <tr>
-                <td width="700">
-              <p align="justify" class="content">
-                I am currently an Assistant Professor at the College of Mechatronics and Control Engineering at Shenzhen University. Previously, I received my Bachelor's Degree in Automation in 2015 and my Ph.D. degree in Software Engineering in 2021, both from South China University of Technology under the supervision of Prof.  <strong><a href="https://tanmingkui.github.io/" target="_blank" rel="nofollow" class="caption-2">Mingkui Tan</a></strong> and Dr. <strong><a href="https://people.csail.mit.edu/ganchuang/" target="_blank" rel="nofollow" class="caption-2">Chuang Gan</a></strong>. 
-                 My research interests include machine learning, deep learning, and their applications in video understanding.</p>  
-              </td>
-              </tr>
-            <!-- </tbody>
-          </table> -->
-        <tr height="5">
-          <td>
-            <p class="margin">&nbsp;</p>
-              <p class="content">
-                 <strong><a href="https://scholar.google.com.sg/citations?user=s3X4YHwAAAAJ&hl=en">Google Scholar</a></strong> |
-                <strong><a href="#sect-links">Contact</a></strong> |
-                <strong><a href="#sect-events">News</a></strong> |
-                <strong><a href="#sect-publications">Publications</a></strong> |
-                <strong><a href="#sect-software">Software</a></strong> </p>
-          </td>
-        </tr>
-        <tr height="5">
-          <td colspan="2"></td></tr>
-      </tbody></table></td>
-    </tr>
-  </tbody></table>
-  <p class="margin">&nbsp;</p>
-
-
-
-  <br>
-  <!-- contact & links -->
-  <p id="sect-links" class="title-large">Contact</p>
-  <strong>Email: zengrh [at] szu (dot) edu (dot) cn </a></strong></p>
-  <br>
-
-  <!-- news here -->
-  <p id="sect-events" class="title-large">News</p>
-  <li> One paper on video test-time adaptation is accepted by ACM MM 2023.
-  <li> I am serving as a reviewer for CVPR 2023, ICCV 2023, NeurIPS 2023.
-  <li> One paper on vision-and-language navigation is accepted by NeurIPS 2022.
-  <li> I am serving as a reviewer for CVPR 2022, ICML 2022, ECCV 2022, NeurIPS 2022.
-
-  <br>
-  <!-- add more news as you like using above format -->
-  <br>
-
-  <p id="sect-publications" class="title-large">Selected Publications <strong><a href="https://scholar.google.com.sg/citations?user=s3X4YHwAAAAJ&hl=en">(Full List)</a></strong> </p>
-
+    <title>Runhao Zeng</title>
+    <link rel="shortcut icon" href="imgs/favicon.ico">
   
-
-  <table border="0">
-    <tbody><tr>
-      <td width="140"><a href="imgs/TPAMI2021.png"><img src="imgs/TPAMI2021.png" width="150" hight="200"></a></td>
-      <td width="20"></td>
-      <td valign="middle" width="800">
-        <p class="caption-1 "><strong><a href="https://arxiv.org/pdf/2112.00302.pdf"> Graph Convolutional Module for Temporal Action Localization in Videos</a> </strong></p>
-        <p class="author"> <strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, Chuang Gan
-  </p>
-
-        <p class="content">
-        <p class="caption-2"> <strong> TPAMI 2021</strong>
-        </tr>
-  </tbody></table>
-  </tbody></table>
-
-  <table border="0">
-    <tbody><tr>
-      <td width="140"><a href="imgs/TITS2021.png"><img src="imgs/TITS2021.png" width="150" hight="200"></a></td>
-      <td width="20"></td>
-      <td valign="middle" width="800">
-        <p class="caption-1 "><strong><a href="https://ieeexplore.ieee.org/abstract/document/9600603/"> Bidirectional Posture-Appearance Interaction Network for Driver Behavior Recognition</a> </strong></p>
-        <p class="author">  Mingkui Tan, Gengqin Ni, Xu Liu, Shiliang Zhang, Xiangmiao Wu, Yaowei Wang, <strong>Runhao Zeng*</strong>
-  </p>
-
-        <p class="content">
-        <p class="caption-2"> <strong> TITS 2021 </strong>
-        </tr>
-  </tbody></table>
-  </tbody></table>
-
-
-
-  <table border="0">
-    <tbody><tr>
-      <td width="140"><a href="imgs/CVPR2020.png"><img src="imgs/CVPR2020.png" width="150" hight="200"></a></td>
-      <td width="20"></td>
-      <td valign="middle" width="800">
-        <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Zeng_Dense_Regression_Network_for_Video_Grounding_CVPR_2020_paper.pdf"> Dense Regression Network For Video Grounding</a> </strong></p>
-        <p class="author">  <strong>Runhao Zeng</strong>, Haoming Xu, Wenbing Huang, Peihao Chen, Mingkui Tan, Chuang Gan
-  </p>
-
-        <p class="content">
-        <p class="caption-2"> <strong> CVPR 2020 </strong>
-        </tr>
-  </tbody></table>
-  </tbody></table>
-
-
-  <table border="0">
-    <tbody><tr>
-      <td width="140"><a href="imgs/ICCV2019.png"><img src="imgs/ICCV2019.png" width="150" hight="150"></a></td>
-      <td width="20"></td>
-      <td valign="middle" width="800">
-        <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Zeng_Graph_Convolutional_Networks_for_Temporal_Action_Localization_ICCV_2019_paper.pdf"> Graph Convolutional Networks for Temporal Action Localization</a> </strong></p>
-        <p class="author"> <strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, Chuang Gan</p>
-
-        <p class="content">
-        <p class="caption-2"> <strong> ICCV 2019  </strong>
-        </tr>
-
-  </tbody></table>
-  </tbody></table>
-
-
-  <table border="0">
-    <tbody><tr>
-      <td width="140"><a href="imgs/TIP2019.png"><img src="imgs/TIP2019.png" width="150" hight="150"></a></td>
-      <td width="20"></td>
-      <td valign="middle" width="800">
-        <p class="caption-1 "><strong><a href="https://drive.google.com/file/d/17_NTO4CkXnIMNGKnMGlfF5b_aaRYKkni/view"> Breaking Winner-Takes-All: Iterative-Winners-Out Networks for Weakly Supervised Temporal Action Localization</a> </strong></p>
-        <p class="author"> <strong>Runhao Zeng</strong>, Chuang Gan, Peihao Chen, Wenbing Huang, Qingyao Wu, Mingkui Tan</p>
-
-        <p class="content">
-        <p class="caption-2"> <strong> TIP 2019  </strong>
-        </tr>
-
-  </tbody></table>
-  </tbody></table>
-
-
-  <!-- add more news as you like using above format -->
-  <br>
-
-  <!-- software here -->
-  <p id="sect-software" class="title-large">Data &amp; Software</p>
-  <p class="content">&bull; <strong><a href="https://github.com/Alvin-Zeng/PGCN">PGCN.</a></strong>  Temporal Action Localizaton.</p>
-
-  <p class="content">&bull; <strong><a href="https://github.com/Alvin-Zeng/DRN">DRN.</a></strong>  Video Grounding.</p>
-
-  <br>
-
-<a href="https://www.easycounter.com/">
-<img src="https://www.easycounter.com/counter.php?zengrunhao"
-border="0" alt="Hit Counters"></a>unique visitors since 2022.04  <!-- Awards here -->
-
-  <br>
-
-
-  </html>
+    <style type="text/css">
+    body {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+      width: 100%;
+    }
+    p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+  
+    .caption {
+        font-size: 25px;
+        font-weight: normal;
+        color: #000;
+        font-family:  Arial, sans-serif;
+    }
+    .caption-1 {
+        font-size: 18px;
+        font-family:  Arial, sans-serif;
+      margin-bottom: 3px;
+    }
+    .caption-2 {
+        font-size: 16px;
+        font-family:  Arial, sans-serif;
+        font-weight: bold;
+      margin-bottom: 1px;
+        color: #000079;
+    }
+    .caption-3 {
+        font-size: 16px;
+        font-family:  Arial, sans-serif;
+        font-weight: bold;
+      margin-bottom: 1px;
+        color: #F00;
+    }
+  
+    .caption-4 {
+        font-size: 16px;
+        font-family:  Arial, sans-serif;
+        color: #000079;
+    }
+    .content {
+        font-size: 16px;
+        font-family:  Arial, sans-serif;
+      margin-bottom: 5px;
+        text-align: justify;
+    }
+    .content a {
+        font-size: 16px;
+        font-family:  Arial, sans-serif;
+      margin-bottom: 10px;
+        color: #000;
+  
+    }
+    .content strong a {
+        font-size: 16px;
+      font-weight: initial;
+        font-family:  Arial, sans-serif;
+      margin-bottom: 10px;
+        color: #000079;
+    }
+  
+    .author {
+      font-size: 16px;
+      font-style:oblique;
+      font-family:  Arial, sans-serif;
+      text-align: justify;
+      margin-bottom: 1px;
+    }
+    .author a {
+      font-size: 16px;
+      font-style:oblique;
+      font-family:  Arial, sans-serif;
+      color: #000;
+      margin-bottom: 1px;
+    }
+    .author strong a {
+      font-size: 16px;
+      font-style:oblique;
+      font-weight: initial;
+      font-family:  Arial, sans-serif;
+      color: #000079;
+    }
+  
+    .title-small {
+      margin-top: 20px;
+      margin-bottom: 20px;
+        font-size: 20px;
+      font-weight: bold;
+      font-family:  Arial, sans-serif;	/* font-weight: bold; */
+        color: #000;
+    }
+    .title-large {
+        font-size: 24px;
+      margin-bottom: 10px;
+      font-family:  Arial, sans-serif;
+      font-weight: bold;
+        color: #000;
+    }
+    .margin {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .margin-small {
+        font-size: 5px;
+        line-height: 5px;
+    }
+    .margin-large {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    content a:link {
+        text-decoration: none;
+    }
+    content a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    a:active {
+        text-decoration: underline;
+        color: #000000;
+        font-family:  Tahoma, Geneva, sans-serif;
+    }
+    strong a:active {
+        text-decoration: underline;
+        color: #000000;
+    }
+    img
+    {
+     border-color: black;
+    }
+  
+    #pubs .pubs-list {
+        display: none;
+    }
+  
+    #pubs.show-by-date .pubs-list.by-date {
+        display: block;
+    }
+  
+    #pubs.show-by-topic .pubs-list.by-topic {
+        display: block;
+    }
+  
+    .project-layout{
+      position: relative;
+      margin-top: 8px;
+    }
+  
+    .project-layout .title-large{
+      position: absolute;
+      top:0;
+      left:0;
+    }
+  
+    .project {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+  
+    .project h3{
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+  
+    .project p{
+      font-size: 18px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  
+    .project .link{
+      width:100%;
+      line-height: 1.5;
+    }
+  
+    .project .intro {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+    .project .intro .more {
+        /* background-color: rgb(0, 0, 238); */
+        background-color: #0d47a1;
+        border: none;
+        color: white;
+        padding: 8px 26px;
+        margin: 5px;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition: 0.3s;
+    }
+  
+    .project .intro .more:hover{
+      opacity: 0.7;
+    }
+  
+    .project .preview {
+      /* object-fit: none; */
+      outline: none;
+    }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=gbk"></head>
+    <script src="scroll.js"></script>
+    <script>
+      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+      // ga('create', 'UA-53682931-1', 'auto'); // maybe a new account of google analysis is needed(https://www.google-analytics.com).
+      // ga('send', 'pageview');
+      function showPubs(id) {
+      var pubs = document.getElementById('pubs');
+        pubs.classList.toggle('show-by-date', id === 0)
+        pubs.classList.toggle('show-by-topic', id === 1)
+        return true;
+      }
+    </script>
+  
+    <body><div style="width: 1085px; margin: auto;">
+  
+    <table border="0" width="100%" style="margin: auto">
+      <tbody>
+  
+        <tr>
+  
+        <td width="185"><table>
+                <tr><td>
+                <a href="imgs/RunhaoZeng.jpg"><img src="imgs/RunhaoZeng.jpg"  height="180" alt="RunhaoZeng;"></td></tr>
+                </table></td>
+        <td width="15"></td>
+        <td></td>
+        <td><table border="0" width="100%">
+          <tbody>
+          <tr height="10">
+            <td colspan="2"></td></tr>
+  
+  
+             <tr height="20">
+            <td>
+               <!-- add as more information here as you like, and this line is also an example of html annoation -->
+               <p class="caption">Runhao Zeng</p>
+  
+               <!-- <p class="caption">Runhao Zeng&nbsp;<span class="content"><a href="mailto:zengrh@szu.edu.com">zengrh[AT]csail[dot]edu[dot]com</a></span></p> -->
+               <!-- <p class="content"><a href="mailto:zengrh@csail.edu.com">zengrh[AT]szu[dot]edu[dot]cn</a></p> -->
+               <!-- <p class="content"><b>Computer Science and Artificial Intelligence Laboratory</b></p> -->
+               <br>
+            </td>
+          </tr>
+          <!-- <table border="0">
+              <tbody> -->
+                <tr>
+                  <td width="700">
+                <p align="justify" class="content">
+                  I am currently an Assistant Professor at the College of Mechatronics and Control Engineering at Shenzhen University. Previously, I received my Bachelor's Degree in Automation in 2015 and my Ph.D. degree in Software Engineering in 2021, both from South China University of Technology under the supervision of Prof.  <strong><a href="https://tanmingkui.github.io/" target="_blank" rel="nofollow" class="caption-2">Mingkui Tan</a></strong> and Dr. <strong><a href="https://people.csail.mit.edu/ganchuang/" target="_blank" rel="nofollow" class="caption-2">Chuang Gan</a></strong>. 
+                   My research interests include machine learning, deep learning, and their applications in video understanding.</p>  
+                </td>
+                </tr>
+              <!-- </tbody>
+            </table> -->
+          <tr height="5">
+            <td>
+              <p class="margin">&nbsp;</p>
+                <p class="content">
+                   <strong><a href="https://scholar.google.com.sg/citations?user=s3X4YHwAAAAJ&hl=en">Google Scholar</a></strong> |
+                  <strong><a href="#sect-links">Contact</a></strong> |
+                  <strong><a href="#sect-events">News</a></strong> |
+                  <strong><a href="#sect-publications">Publications</a></strong> |
+                  <strong><a href="#sect-software">Software</a></strong> </p>
+            </td>
+          </tr>
+          <tr height="5">
+            <td colspan="2"></td></tr>
+        </tbody></table></td>
+      </tr>
+    </tbody></table>
+    <p class="margin">&nbsp;</p>
+  
+  
+  
+    <br>
+    <!-- contact & links -->
+    <p id="sect-links" class="title-large">Contact</p>
+    <strong>Email: zengrh [at] szu (dot) edu (dot) cn </a></strong></p>
+    <br>
+  
+    <!-- news here -->
+    <p id="sect-events" class="title-large">News</p>
+    <li> One paper on video test-time adaptation is accepted by <font color=red>ACM MM 2023</font>.
+    <li> I am serving as a reviewer for CVPR 2023, ICCV 2023, NeurIPS 2023.
+    <li> One paper on vision-and-language navigation is accepted by <font color=red></font>NeurIPS 2022</font>.
+    <li> I am serving as a reviewer for CVPR 2022, ICML 2022, ECCV 2022, NeurIPS 2022.
+  
+    <br>
+    <!-- add more news as you like using above format -->
+    <br>
+  
+    <p id="sect-publications" class="title-large">Selected Publications <strong><a href="https://scholar.google.com.sg/citations?user=s3X4YHwAAAAJ&hl=en">(Full List)</a></strong> </p>
+  
+    
+  
+    <table border="0">
+      <tbody><tr>
+        <td width="140"><a href="imgs/TPAMI2021.png"><img src="imgs/TPAMI2021.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+          <p class="caption-1 "><strong><a href="https://arxiv.org/pdf/2112.00302.pdf"> Graph Convolutional Module for Temporal Action Localization in Videos</a> </strong></p>
+          <p class="author"> <strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, Chuang Gan
+    </p>
+  
+          <p class="content">
+          <p class="caption-2"> <strong> TPAMI 2021</strong>
+          </tr>
+    </tbody></table>
+    </tbody></table>
+  
+    <table border="0">
+      <tbody><tr>
+        <td width="140"><a href="imgs/TITS2021.png"><img src="imgs/TITS2021.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+          <p class="caption-1 "><strong><a href="https://ieeexplore.ieee.org/abstract/document/9600603/"> Bidirectional Posture-Appearance Interaction Network for Driver Behavior Recognition</a> </strong></p>
+          <p class="author">  Mingkui Tan, Gengqin Ni, Xu Liu, Shiliang Zhang, Xiangmiao Wu, Yaowei Wang, <strong>Runhao Zeng*</strong>
+    </p>
+  
+          <p class="content">
+          <p class="caption-2"> <strong> TITS 2021 </strong>
+          </tr>
+    </tbody></table>
+    </tbody></table>
+  
+  
+  
+    <table border="0">
+      <tbody><tr>
+        <td width="140"><a href="imgs/CVPR2020.png"><img src="imgs/CVPR2020.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+          <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Zeng_Dense_Regression_Network_for_Video_Grounding_CVPR_2020_paper.pdf"> Dense Regression Network For Video Grounding</a> </strong></p>
+          <p class="author">  <strong>Runhao Zeng</strong>, Haoming Xu, Wenbing Huang, Peihao Chen, Mingkui Tan, Chuang Gan
+    </p>
+  
+          <p class="content">
+          <p class="caption-2"> <strong> CVPR 2020 </strong>
+          </tr>
+    </tbody></table>
+    </tbody></table>
+  
+  
+    <table border="0">
+      <tbody><tr>
+        <td width="140"><a href="imgs/ICCV2019.png"><img src="imgs/ICCV2019.png" width="150" hight="150"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+          <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Zeng_Graph_Convolutional_Networks_for_Temporal_Action_Localization_ICCV_2019_paper.pdf"> Graph Convolutional Networks for Temporal Action Localization</a> </strong></p>
+          <p class="author"> <strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, Chuang Gan</p>
+  
+          <p class="content">
+          <p class="caption-2"> <strong> ICCV 2019  </strong>
+          </tr>
+  
+    </tbody></table>
+    </tbody></table>
+  
+  
+    <table border="0">
+      <tbody><tr>
+        <td width="140"><a href="imgs/TIP2019.png"><img src="imgs/TIP2019.png" width="150" hight="150"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+          <p class="caption-1 "><strong><a href="https://drive.google.com/file/d/17_NTO4CkXnIMNGKnMGlfF5b_aaRYKkni/view"> Breaking Winner-Takes-All: Iterative-Winners-Out Networks for Weakly Supervised Temporal Action Localization</a> </strong></p>
+          <p class="author"> <strong>Runhao Zeng</strong>, Chuang Gan, Peihao Chen, Wenbing Huang, Qingyao Wu, Mingkui Tan</p>
+  
+          <p class="content">
+          <p class="caption-2"> <strong> TIP 2019  </strong>
+          </tr>
+  
+    </tbody></table>
+    </tbody></table>
+  
+  
+    <!-- add more news as you like using above format -->
+    <br>
+  
+    <!-- software here -->
+    <p id="sect-software" class="title-large">Data &amp; Software</p>
+    <p class="content">&bull; <strong><a href="https://github.com/Alvin-Zeng/PGCN">PGCN.</a></strong>  Temporal Action Localizaton.</p>
+  
+    <p class="content">&bull; <strong><a href="https://github.com/Alvin-Zeng/DRN">DRN.</a></strong>  Video Grounding.</p>
+  
+    <br>
+  
+  <a href="https://www.easycounter.com/">
+  <img src="https://www.easycounter.com/counter.php?zengrunhao"
+  border="0" alt="Hit Counters"></a>unique visitors since 2022.04  <!-- Awards here -->
+  
+    <br>
+  
+  
+    </html>
+  
