@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style type="text/css">
+        body {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+          width: 100%;
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            position: sticky; /* 固定导航栏在顶部 */
+            top: 0;
+            z-index: 1000; /* 保证导航栏始终在最前 */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        .navbar a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    
+        .caption {
+            font-size: 25px;
+            font-weight: normal;
+            color: #000;
+            font-family:  Arial, sans-serif;
+        }
+        .caption-1 {
+            font-size: 18px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 3px;
+        }
+        .caption-2 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #000079;
+        }
+        .caption-3 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #F00;
+        }
+      
+        .caption-4 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            color: #000079;
+        }
+        .content {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 5px;
+            text-align: justify;
+        }
+        .content a {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000;
+      
+        }
+        .content strong a {
+            font-size: 16px;
+          font-weight: initial;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000079;
+        }
+      
+        .author {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          text-align: justify;
+          margin-bottom: 1px;
+        }
+        .author a {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          color: #000;
+          margin-bottom: 1px;
+        }
+        .author strong a {
+          font-size: 16px;
+          font-style:oblique;
+          font-weight: initial;
+          font-family:  Arial, sans-serif;
+          color: #000079;
+        }
+      
+        .title-small {
+          margin-top: 20px;
+          margin-bottom: 20px;
+            font-size: 20px;
+          font-weight: bold;
+          font-family:  Arial, sans-serif;	/* font-weight: bold; */
+            color: #000;
+        }
+        .title-large {
+            font-size: 24px;
+          margin-bottom: 10px;
+          font-family:  Arial, sans-serif;
+          font-weight: bold;
+            color: #000;
+        }
+        .margin {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .margin-small {
+            font-size: 5px;
+            line-height: 5px;
+        }
+        .margin-large {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        content a:link {
+            text-decoration: none;
+        }
+        content a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            text-decoration: underline;
+            color: #000000;
+            font-family:  Tahoma, Geneva, sans-serif;
+        }
+        strong a:active {
+            text-decoration: underline;
+            color: #000000;
+        }
+        img
+        {
+         border-color: black;
+        }
+      
+        #pubs .pubs-list {
+            display: none;
+        }
+      
+        #pubs.show-by-date .pubs-list.by-date {
+            display: block;
+        }
+      
+        #pubs.show-by-topic .pubs-list.by-topic {
+            display: block;
+        }
+        ol li {
+            margin: 5px auto 5px auto; /* 设置下方间距 */
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/sub_html/research.html">Research</a>
+        <a href="/sub_html/publications.html">Publications</a>
+        <a href="/sub_html/grants.html">Grants</a>
+        <a href="/sub_html/students.html">Students</a>
+      </div>
+
+    <div style="text-align: center; margin: 20px auto auto auto">
+        <h2 style="color: #261cda;">Publications</h2>
+        <hr style="border: 1px solid #261cda; width: 90%; margin: auto auto 20px auto;">
+    </div>
+
+    <div style="width: 1085px; margin: auto">
+        <h3 style="display: inline-block; color: #000000;">Journals:</h3>
+        <span style="
+            display: inline-block;
+            width: 300px; 
+            height: 20px; 
+            background: linear-gradient(to right, #cecff5, #fcfcfc77);
+            vertical-align: middle;">
+        </span>
+
+        <p class="content">
+            <ol>
+                <li>Zeng You, Zhiquan Wen, Yaofo Chen, Xin Li, <strong>Runhao Zeng (corresponding)</strong>, Yaowei Wang, and Mingkui Tan. 2024. Towards Long Video Understanding via Fine-detailed Video Story Generation. <strong><em>IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT) (2024)</em></strong>.</li>
+                <li><strong>Runhao Zeng</strong>, Yishen Zhuo, Jialiang Li, Yunjin Yang, Huisi Wu, Qi Chen, Xiping Hu, and Victor CM Leung. 2024. Improving Video Moment Retrieval by Auxiliary Moment-Query Pairs with Hyper-Interaction. <strong><em>IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT) (2024)</strong></em>.</li>
+                <li>Shiyi Wang, <strong>Runhao Zeng (equal contribution)</strong>, Xinrui Ding, Haosen Bai, Xionglin Zhu, Hongwei Jiang, Rui Zhou, Yong Tang, and Hui Li. 2024. Flexible triboelectric sensor array based on 3D printed bead-on-string sacrificial layer for human-machine interactions. <strong><em>Nano Energy</em></strong> 122, (2024), 109318.</li>
+                <li>Mingkui Tan, Gengqin Ni, Xu Liu, Shiliang Zhang, Xiangmiao Wu, Yaowei Wang, and <strong>Runhao Zeng (corresponding)</strong>. 2021. Bidirectional posture-appearance interaction network for driver behavior recognition. <strong><em>IEEE transactions on intelligent transportation systems (T-ITS)</em></strong> 23, 8 (2021), 13242–13254.</li>
+                <li><strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, and Chuang Gan. 2021. Graph convolutional module for temporal action localization in videos. <strong><em>IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)</em></strong> 44, 10 (2021), 6209–6223.</li>
+                <li>Zeng You, <strong>Runhao Zeng (equal contribution)</strong>, Xiaoyong Lan, Huixia Ren, Zhiyang You, Xue Shi, Shipeng Zhao, Yi Guo, Xin Jiang, and Xiping Hu. 2020. Alzheimer’s disease classification with a cascade neural network. <strong><em></em>Frontiers in Public Health</strong> 8, (2020), 584387.</li>
+                <li>Peihao Chen, Chuang Gan, Guangyao Shen, Wenbing Huang, <strong>Runhao Zeng</strong>, and Mingkui Tan. 2019. Relation attention for temporal action localization. <strong><em>IEEE Transactions on Multimedia (T-MM)</em></strong> 22, 10 (2019), 2723–2733.</li>
+                <li><strong>Runhao Zeng</strong>, Chuang Gan, Peihao Chen, Wenbing Huang, Qingyao Wu, and Mingkui Tan. 2019. Breaking winner-takes-all: Iterative-winners-out networks for weakly supervised temporal action localization. <strong><em>IEEE Transactions on Image Processing (T-IP)</em></strong> 28, 12 (2019), 5797–5808.</li>
+            </ol>
+        </p>
+
+    </br>
+
+        <h3 style="display: inline-block; color: #000000;">Conferences:</h3>
+        <span style="
+            display: inline-block;
+            width: 300px; 
+            height: 20px; 
+            background: linear-gradient(to right, #cecff5, #fcfcfc77);
+            vertical-align: middle;">
+        </span>
+
+        <p class="content">
+            <ol>
+                <li>Qi Deng, Shuaicheng Niu, Ronghao Zhang, Yaofo Chen, <strong>Runhao Zeng (corresponding)</strong>, Jian Chen, and Xiping Hu. 2024. Learning to Generate Gradients for Test-Time Adaptation via Test-Time Training Layers. <strong><em>Association for the Advancement of Artificial Intelligence (AAAI 2025)</em></strong>.</li>
+                <li>Changxin Huang, Yanbin Chang, Junfan Lin, Junyang Liang, <strong>Runhao Zeng</strong>, and Jianqiang Li. 2024. Efficient Language-instructed Skill Acquisition via Reward-Policy Co-Evolution. <strong><em>Association for the Advancement of Artificial Intelligence (AAAI 2025)</em></strong>.</li>
+                <li>Haifeng Lu, Jiuyi Chen, Feng Liang, Mingkui Tan, <strong>Runhao Zeng (corresponding)</strong>, and Xiping Hu. 2024. Understanding Emotional Body Expressions via Large Language Models. <strong><em>Association for the Advancement of Artificial Intelligence (AAAI 2025)</em></strong>.</li>
+                <li>Hong Qiu, Weijian Fan, Li Li, Zhuohua Liu, Wenjie Zhang, Jiaxin Chen, and <strong>Runhao Zeng (corresponding)</strong>. 2024. An Innovative AI and IoT-Based Braille System for Smart Living. <strong><em>In 2024 IEEE International Conference on Smart Internet of Things (SmartIoT 2024)</em></strong>, IEEE, 399–406.</li>
+                <li>Hong Qiu, Zijing Zhou, Yeping Peng, Jiaming Liang, Jinghai Shang, Xiaoqian Xi, and <strong>Runhao Zeng (corresponding)</strong>. 2024. Multi-Terminal Cooperative AIoT Smart Agriculture System Based on Growth Prediction Model. <strong><em>In 2024 IEEE International Conference on Smart Internet of Things (SmartIoT 2024)</em></strong>, IEEE, 407–414.</li>
+                <li>Ying Peng, Jian Chen, and <strong>Runhao Zeng (corresponding)</strong>. 2024. Prompting Cross-Architecture Learning for Video Classification by Learnable Local Alignment. <strong><em>In 2024 IEEE International Conference on Smart Internet of Things (SmartIoT 2024)</em></strong>, IEEE, 480–489.</li>
+                <li><strong>Runhao Zeng</strong>, Dingjie Zhou, Qiwei Liang, Junlin Liu, Hui Li, Changxin Huang, Jianqiang Li, Xiping Hu, and Fuchun Sun. 2024. Video2Reward: Generating Reward Function from Videos for Legged Robot Behavior Learning. <strong><em>European Conference on Artificial Intelligence (ECAI 2024)</em></strong>.</li>
+                <li>Xiaolong Deng, Huisi Wu, <strong>Runhao Zeng</strong>, and Jing Qin. 2024. MemSAM: Taming Segment Anything Model for Echocardiography Video Segmentation. <strong><em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)</em></strong>, 9622–9631.</li>
+                <li><strong>Runhao Zeng</strong>, Xiaoyong Chen, Jiaming Liang, Huisi Wu, Guangzhong Cao, and Yong Guo. 2024. Benchmarking the Robustness of Temporal Action Detection Models Against Temporal Corruptions. <strong><em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2024)</em></strong>, 18263–18274.</li>
+                <li><strong>Runhao Zeng</strong>, Qi Deng, Huixuan Xu, Shuaicheng Niu, and Jian Chen. 2023. Exploring motion cues for video test-time adaptation. <strong><em>In Proceedings of the 31st ACM International Conference on Multimedia (ACMMM 2023)</em></strong>, 1840–1850.</li>
+                <li>Peihao Chen, Dongyu Ji, Kunyang Lin, <strong>Runhao Zeng</strong>, Thomas Li, Mingkui Tan, and Chuang Gan. 2022. Weakly-supervised multi-granularity map learning for vision-and-language navigation. <strong><em>Advances in Neural Information Processing Systems (NeurIPS 2022)</em></strong> 35, (2022), 38149–38161.</li>
+                <li>Peihao Chen, Deng Huang, Dongliang He, Xiang Long, <strong>Runhao Zeng</strong>, Shilei Wen, Mingkui Tan, and Chuang Gan. 2021. Rspnet: Relative speed perception for unsupervised video representation learning. <strong><em>In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2021)</em></strong>, 1045–1053.</li>
+                <li>Haoming Xu, <strong>Runhao Zeng (equal contribution)</strong>, Qingyao Wu, Mingkui Tan, and Chuang Gan. 2020. Cross-modal relation-aware networks for audio-visual event localization. <strong><em>In Proceedings of the 28th ACM International Conference on Multimedia (ACMMM 2020)</em></strong>, 3893–3901.</li>
+                <li>Deng Huang, Peihao Chen, <strong>Runhao Zeng</strong>, Qing Du, Mingkui Tan, and Chuang Gan. 2020. Location-aware graph convolutional networks for video question answering. <strong><em>In Proceedings of the AAAI Conference on Artificial Intelligence (AAAI 2020)</em></strong>, 11021–11028.</li>
+                <li>Yihan Zheng, Zhiquan Wen, Mingkui Tan, <strong>Runhao Zeng</strong>, Qi Chen, Yaowei Wang, and Qi Wu. 2020. Modular graph attention network for complex visual relational reasoning. <strong><em>In Proceedings of the Asian Conference on Computer Vision (ACCV 2020)</em></strong>.</li>
+                <li><strong>Runhao Zeng</strong>, Haoming Xu, Wenbing Huang, Peihao Chen, Mingkui Tan, and Chuang Gan. 2020. Dense regression network for video grounding. <strong><em>In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR 2020)</em></strong>, 10287–10296.</li>
+                <li><strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, and Chuang Gan. 2019. Graph convolutional networks for temporal action localization. <strong><em>In Proceedings of the IEEE/CVF international conference on computer vision (ICCV 2019)</em></strong>, 7094–7103.</li>
+            </ol>
+        </p>
+
+
+    </br>
+
+    <h3 style="display: inline-block; color: #000000;">arXiv:</h3>
+    <span style="
+        display: inline-block;
+        width: 300px; 
+        height: 20px; 
+        background: linear-gradient(to right, #cecff5, #fcfcfc77);
+        vertical-align: middle;">
+    </span>
+        <p class="content">
+            <ol>
+                <li>Kunyang Lin, Yufeng Wang, Peihao Chen, <strong>Runhao Zeng</strong>, Siyuan Zhou, Mingkui Tan, and Chuang Gan. 2023. DCIR: Dynamic Consistency Intrinsic Reward for Multi-Agent Reinforcement Learning. arXiv preprint arXiv:2312.05783 (2023).</li>
+                <li>Peihao Chen, Xinyu Sun, Hongyan Zhi, <strong>Runhao Zeng</strong>, Thomas H Li, Gaowen Liu, Mingkui Tan, and Chuang Gan. 2023. A<sup>2</sup>Nav: Action-Aware Zero-Shot Robot Navigation by Exploiting Vision-and-Language Ability of Foundation Models. arXiv preprint arXiv:2308.07997 (2023).</li>
+                <li>Chendi Rao, Jiezhang Cao, <strong>Runhao Zeng</strong>, Qi Chen, Huazhu Fu, Yanwu Xu, and Mingkui Tan. 2020. A thorough comparison study on adversarial attacks and defenses for common thorax disease classification in chest X-rays. arXiv preprint arXiv:2003.13969 (2020).</li>
+                <li>Fengda Zhu, Xiaojun Chang, <strong>Runhao Zeng</strong>, and Mingkui Tan. 2019. Continual reinforcement learning with diversity exploration and adversarial self-correction. arXiv preprint arXiv:1906.09205 (2019).</li>
+            </ol>
+        </p>
+    </div>
+</body>
+</html>

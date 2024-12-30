@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style type="text/css">
+        body {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+          width: 100%;
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            position: sticky; /* 固定导航栏在顶部 */
+            top: 0;
+            z-index: 1000; /* 保证导航栏始终在最前 */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        .navbar a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    
+        .caption {
+            font-size: 25px;
+            font-weight: normal;
+            color: #000;
+            font-family:  Arial, sans-serif;
+        }
+        .caption-1 {
+            font-size: 18px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 3px;
+        }
+        .caption-2 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #000079;
+        }
+        .caption-3 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #F00;
+        }
+      
+        .caption-4 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            color: #000079;
+        }
+        .content {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 5px;
+            text-align: justify;
+        }
+        .content a {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000;
+      
+        }
+        .content strong a {
+            font-size: 16px;
+          font-weight: initial;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000079;
+        }
+      
+        .author {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          text-align: justify;
+          margin-bottom: 1px;
+        }
+        .author a {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          color: #000;
+          margin-bottom: 1px;
+        }
+        .author strong a {
+          font-size: 16px;
+          font-style:oblique;
+          font-weight: initial;
+          font-family:  Arial, sans-serif;
+          color: #000079;
+        }
+      
+        .title-small {
+          margin-top: 20px;
+          margin-bottom: 20px;
+            font-size: 20px;
+          font-weight: bold;
+          font-family:  Arial, sans-serif;	/* font-weight: bold; */
+            color: #000;
+        }
+        .title-large {
+            font-size: 24px;
+          margin-bottom: 10px;
+          font-family:  Arial, sans-serif;
+          font-weight: bold;
+            color: #000;
+        }
+        .margin {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .margin-small {
+            font-size: 5px;
+            line-height: 5px;
+        }
+        .margin-large {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        content a:link {
+            text-decoration: none;
+        }
+        content a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            text-decoration: underline;
+            color: #000000;
+            font-family:  Tahoma, Geneva, sans-serif;
+        }
+        strong a:active {
+            text-decoration: underline;
+            color: #000000;
+        }
+        img
+        {
+         border-color: black;
+        }
+      
+        #pubs .pubs-list {
+            display: none;
+        }
+      
+        #pubs.show-by-date .pubs-list.by-date {
+            display: block;
+        }
+      
+        #pubs.show-by-topic .pubs-list.by-topic {
+            display: block;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 30px auto 0px auto;
+            font-size: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            color: #333;
+            margin: 100px auto 0px auto;
+            font-size: 20px;
+        }
+        
+        .students-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            gap: 80px;
+            margin: auto;
+            width: 1000px;
+        }
+        .student-card {
+            text-align: center;
+            width: 100px;
+            height: 136px;
+        }
+        .student-card img {
+            width: 100px;
+            height: 136px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(51, 49, 49, 0.318)
+        }
+        .student-name {
+            margin-top: 0px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #555;
+        }        
+        .student-name-CN {
+            margin-top: 2px;
+            margin-bottom: 0px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+            font-family: "KaiTi", "楷体", serif;
+        }
+        .student-info {
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/sub_html/research.html">Research</a>
+        <a href="/sub_html/publications.html">Publications</a>
+        <a href="/sub_html/grants.html">Grants</a>
+        <a href="/sub_html/students.html">Students</a>
+      </div>
+
+
+    <div style="text-align: center; margin: 20px auto auto auto">
+        <h2 style="color: #261cda;">Students</h2>
+        <hr style="border: 1px solid #261cda; width: 90%; margin: auto auto 20px auto;">
+    </div>
+
+    <h1>Enrolled (博士/硕士研究生)</h1></br>
+    <div class="students-container">
+        <div class="student-card">
+            <img src="/imgs/students/ZhenZhang.jpg" alt="ZhenZhang">
+            <div class="student-name">Zhen Zhang</div>
+            <div class="student-name-CN">张震</div>
+            <div class="student-info">兰大2022级 (博)</div>
+        </div>
+
+        <div class="student-card">
+            <img src="/imgs/students/XiaoPeng.jpg" alt="XiaoPeng">
+            <div class="student-name">Xiao Peng</div>
+            <div class="student-name-CN">彭霄</div>
+            <div class="student-info">北理2024级 (博)</div>
+        </div>
+
+        <div class="student-card">
+            <img src="/imgs/students/WenfuPeng.jpg" alt="WenfuPeng">
+            <div class="student-name">WenfuPeng</div>
+            <div class="student-name-CN">彭文福</div>
+            <div class="student-info">深大2022级 (硕)</div>
+        </div>
+
+        <div class="student-card">
+            <img src="/imgs/students/XionglinZhu.jpg" alt="XionglinZhu">
+            <div class="student-name">Xionglin Zhu</div>
+            <div class="student-name-CN">朱雄临</div>
+            <div class="student-info">深大2022级 (硕)</div>
+        </div>
+
+        <div class="student-card">
+            <img src="/imgs/students/QiDeng.jpg" alt="QiDeng">
+            <div class="student-name">Qi Deng</div>
+            <div class="student-name-CN">邓淇</div>
+            <div class="student-info">华工2023级 (硕)</div>
+        </div>     
+
+        <div class="student-card">
+            <img src="/imgs/students/YihaoQian.jpg" alt="YihaoQian">
+            <div class="student-name">Yihao Qian</div>
+            <div class="student-name-CN">钱奕豪</div>
+            <div class="student-info">华工2024级 (硕)</div>
+        </div>
+
+        <div class="student-card">
+            <img src="/imgs/students/YingPeng.jpg" alt="YingPeng">
+            <div class="student-name">Ying Peng</div>
+            <div class="student-name-CN">彭颖</div>
+            <div class="student-info">华工2024级 (硕)</div>
+        </div>
+
+        <div class="student-card">
+            <img src="/imgs/students/YiruiWang.jpg" alt="YiruiWang">
+            <div class="student-name">Yirui Wang</div>
+            <div class="student-name-CN">王一睿</div>
+            <div class="student-info">北理2024级 (硕)</div>
+        </div>
+        
+        <div class="student-card">
+            <img src="/imgs/students/XiaoyongChen.jpg" alt="XiaoyongChen">
+            <div class="student-name">Xiaoyong Chen</div>
+            <div class="student-name-CN">陈潇泳</div>
+            <div class="student-info">深大2021级 (本)</div>
+        </div>
+        
+        <div class="student-card">
+            <img src="/imgs/students/QiweiLiang.jpg" alt="QiweiLiang">
+            <div class="student-name">Qiwei Liang</div>
+            <div class="student-name-CN">梁棋炜</div>
+            <div class="student-info">深大2022级 (本)</div>
+        </div>
+    </div>
+
+    </br>
+
+    <!-- <h3>Graduated</h3>
+    <div class="students-container">
+        <div class="student-card">
+            <img src="/imgs/students/XiaoyongChen.jpg" alt="student1">
+            <div class="student-name">name</div>
+            <div class="student-name-CN">姓名</div>
+            <div class="student-info">2022级 (硕)</div>
+        </div>
+    </div> -->
+
+
+</body>
+</html>

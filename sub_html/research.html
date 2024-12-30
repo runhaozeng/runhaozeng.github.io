@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style type="text/css">
+        body {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+          width: 100%;
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            position: sticky; /* 固定导航栏在顶部 */
+            top: 0;
+            z-index: 1000; /* 保证导航栏始终在最前 */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        .navbar a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    
+        .caption {
+            font-size: 25px;
+            font-weight: normal;
+            color: #000;
+            font-family:  Arial, sans-serif;
+        }
+        .caption-1 {
+            font-size: 18px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 3px;
+        }
+        .caption-2 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #000079;
+        }
+        .caption-3 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #F00;
+        }
+      
+        .caption-4 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            color: #000079;
+        }
+        .content {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 5px;
+            text-align: justify;
+        }
+        .content a {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000;
+      
+        }
+        .content strong a {
+            font-size: 16px;
+          font-weight: initial;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000079;
+        }
+      
+        .author {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          text-align: justify;
+          margin-bottom: 1px;
+        }
+        .author a {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          color: #000;
+          margin-bottom: 1px;
+        }
+        .author strong a {
+          font-size: 16px;
+          font-style:oblique;
+          font-weight: initial;
+          font-family:  Arial, sans-serif;
+          color: #000079;
+        }
+      
+        .title-small {
+          margin-top: 20px;
+          margin-bottom: 20px;
+            font-size: 20px;
+          font-weight: bold;
+          font-family:  Arial, sans-serif;	/* font-weight: bold; */
+            color: #000;
+        }
+        .title-large {
+            font-size: 24px;
+          margin-bottom: 10px;
+          font-family:  Arial, sans-serif;
+          font-weight: bold;
+            color: #000;
+        }
+        .margin {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .margin-small {
+            font-size: 5px;
+            line-height: 5px;
+        }
+        .margin-large {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        content a:link {
+            text-decoration: none;
+        }
+        content a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            text-decoration: underline;
+            color: #000000;
+            font-family:  Tahoma, Geneva, sans-serif;
+        }
+        strong a:active {
+            text-decoration: underline;
+            color: #000000;
+        }
+        img
+        {
+         border-color: black;
+        }
+      
+        #pubs .pubs-list {
+            display: none;
+        }
+      
+        #pubs.show-by-date .pubs-list.by-date {
+            display: block;
+        }
+      
+        #pubs.show-by-topic .pubs-list.by-topic {
+            display: block;
+        }
+      
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/sub_html/research.html">Research</a>
+        <a href="/sub_html/publications.html">Publications</a>
+        <a href="/sub_html/grants.html">Grants</a>
+        <a href="/sub_html/students.html">Students</a>
+    </div>
+
+    <div style="text-align: center; margin: 20px auto auto auto">
+        <h2 style="color: #261cda;">Research</h2>
+        <hr style="border: 1px solid #261cda; width: 90%; margin: auto auto 20px auto;">
+    </div>
+
+    <div style="width: 1085px; margin: auto">
+    <p id="sect-publications" class="title-large">Selected Publications <strong><a href="https://scholar.google.com.sg/citations?user=s3X4YHwAAAAJ&hl=en">(Full List)</a></strong> </p>
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/AAAI2025-Test_Time_Adaptation.png"><img src="/imgs/paper_figures/AAAI2025-Test_Time_Adaptation.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://arxiv.org/abs/2412.16901"> Learning to Generate Gradients for Test-Time Adaptation via Test-Time Training Layers</a> </strong></p>
+        <p class="author"> Qi Deng, Shuaicheng Niu, Ronghao Zhang, Yaofo Chen, <strong>Runhao Zeng*</strong>, Jian Chen, Xiping Hu
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> AAAI 2025</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+    
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/AAAI2025-Reward_Policy.png"><img src="/imgs/paper_figures/AAAI2025-Reward_Policy.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://arxiv.org/abs/2412.13492"> Efficient Language-instructed Skill Acquisition via Reward-Policy Co-Evolution</a> </strong></p>
+        <p class="author"> Changxin Huang, Yanbin Chang, Junfan Lin, Junyang Liang, <strong>Runhao Zeng</strong>, Jianqiang Li
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> AAAI 2025</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/AAAI2025-Emotion.png"><img src="/imgs/paper_figures/AAAI2025-Emotion.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://arxiv.org/abs/2412.12581"> Understanding Emotional Body Expressions via Large Language Models</a> </strong></p>
+        <p class="author"> Haifeng Lu, Jiuyi Chen, Feng Liang, Mingkui Tan, <strong>Runhao Zeng*</strong>, Xiping Hu
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> AAAI 2025</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/TCSVT2024-Long_Video_Understanding.png"><img src="/imgs/paper_figures/TCSVT2024-Long_Video_Understanding.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://ieeexplore.ieee.org/abstract/document/10789221/"> Towards Long Video Understanding via Fine-detailed Video Story Generation</a> </strong></p>
+        <p class="author"> Zeng You, Zhiquan Wen, Yaofo Chen, Xin Li, <strong>Runhao Zeng*</strong>, Yaowei Wang, Mingkui Tan
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> TCSVT 2024</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+    
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/TCSVT2024-Moment_Retrieval.png"><img src="/imgs/paper_figures/TCSVT2024-Moment_Retrieval.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://ieeexplore.ieee.org/abstract/document/10786261/"> Improving Video Moment Retrieval by Auxiliary Moment-Query Pairs with Hyper-Interaction</a> </strong></p>
+        <p class="author"> <strong>Runhao Zeng</strong>, Yishen Zhuo, Jialiang Li, Yunjin Yang, Huisi Wu, Qi Chen, Xiping Hu, Victor CM Leung
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> TCSVT 2024</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/NanoEnergy2024.png"><img src="/imgs/paper_figures/NanoEnergy2024.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://www.sciencedirect.com/science/article/pii/S2211285524000661"> Flexible triboelectric sensor array based on 3D printed bead-on-string sacrificial layer for human-machine interactions</a> </strong></p>
+        <p class="author"> Shiyi Wang*, <strong>Runhao Zeng* (equal contribution)</strong>, Xinrui Ding*, Haosen Bai, Xionglin Zhu, Hongwei Jiang, Rui Zhou, Yong Tang, Hui Li
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> Nano Energy 2024</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/ECAI2024.png"><img src="/imgs/paper_figures/ECAI2024.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://arxiv.org/abs/2412.05515"> Video2Reward: Generating Reward Function from Videos for Legged Robot Behavior Learning</a> </strong></p>
+        <p class="author"> <strong>Runhao Zeng</strong>, Dingjie Zhou, Qiwei Liang, Junlin Liu, Hui Li, Changxin Huang, Jianqiang Li, Xiping Hu, Fuchun Sun
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> ECAI 2024</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+        <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/CVPR2024-memsam.png"><img src="/imgs/paper_figures/CVPR2024-memsam.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+            <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Deng_MemSAM_Taming_Segment_Anything_Model_for_Echocardiography_Video_Segmentation_CVPR_2024_paper.html"> MemSAM: Taming Segment Anything Model for Echocardiography Video Segmentation</a> </strong></p>
+            <p class="author"> Xiaolong Deng, Huisi Wu, <strong>Runhao Zeng</strong>, Jing Qin
+    </p>
+    
+            <p class="content">
+            <p class="caption-2"> <strong> CVPR 2024, <font color=red>Best Paper Award Finalist</font></strong>
+            </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+        <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/CVPR2024.png"><img src="/imgs/paper_figures/CVPR2024.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+            <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zeng_Benchmarking_the_Robustness_of_Temporal_Action_Detection_Models_Against_Temporal_CVPR_2024_paper.html"> Benchmarking the Robustness of Temporal Action Detection Models Against Temporal Corruptions</a> </strong></p>
+            <p class="author"> <strong>Runhao Zeng</strong>, Xiaoyong Chen, Jiaming Liang, Huisi Wu, Guangzhong Cao, Yong Guo
+    </p>
+    
+            <p class="content">
+            <p class="caption-2"> <strong> CVPR 2024</strong>
+            </tr>
+    </tbody></table>
+    </tbody></table>
+        
+    <table border="0">
+        <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/ACMMM2023.jpg"><img src="/imgs/paper_figures/ACMMM2023.jpg" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+            <p class="caption-1 "><strong><a href="https://dl.acm.org/doi/abs/10.1145/3581783.3612153"> Exploring Motion Cues for Video Test-Time Adaptation</a> </strong></p>
+            <p class="author"> <strong>Runhao Zeng</strong>, Qi Deng, Huixuan Xu, Shuaicheng Niu, Jian Chen
+    </p>
+    
+            <p class="content">
+            <p class="caption-2"> <strong> ACMMM 2023</strong>
+            </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+        <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/TITS2021.png"><img src="/imgs/paper_figures/TITS2021.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+            <p class="caption-1 "><strong><a href="https://ieeexplore.ieee.org/abstract/document/9600603/"> Bidirectional Posture-Appearance Interaction Network for Driver Behavior Recognition</a> </strong></p>
+            <p class="author">  Mingkui Tan, Gengqin Ni, Xu Liu, Shiliang Zhang, Xiangmiao Wu, Yaowei Wang, <strong>Runhao Zeng*</strong>
+    </p>
+    
+            <p class="content">
+            <p class="caption-2"> <strong> TITS 2022 </strong>
+            </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/TPAMI2021.png"><img src="/imgs/paper_figures/TPAMI2021.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://arxiv.org/pdf/2112.00302.pdf"> Graph Convolutional Module for Temporal Action Localization in Videos</a> </strong></p>
+        <p class="author"> <strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, Chuang Gan
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> TPAMI 2021</strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/CVPR2020.png"><img src="/imgs/paper_figures/CVPR2020.png" width="150" hight="200"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Zeng_Dense_Regression_Network_for_Video_Grounding_CVPR_2020_paper.pdf"> Dense Regression Network For Video Grounding</a> </strong></p>
+        <p class="author">  <strong>Runhao Zeng</strong>, Haoming Xu, Wenbing Huang, Peihao Chen, Mingkui Tan, Chuang Gan
+    </p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> CVPR 2020 </strong>
+        </tr>
+    </tbody></table>
+    </tbody></table>
+
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/ICCV2019.png"><img src="/imgs/paper_figures/ICCV2019.png" width="150" hight="150"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Zeng_Graph_Convolutional_Networks_for_Temporal_Action_Localization_ICCV_2019_paper.pdf"> Graph Convolutional Networks for Temporal Action Localization</a> </strong></p>
+        <p class="author"> <strong>Runhao Zeng</strong>, Wenbing Huang, Mingkui Tan, Yu Rong, Peilin Zhao, Junzhou Huang, Chuang Gan</p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> ICCV 2019  </strong>
+        </tr>
+
+    </tbody></table>
+    </tbody></table>
+
+
+    <table border="0">
+    <tbody><tr>
+        <td width="140"><a href="/imgs/paper_figures/TIP2019.png"><img src="/imgs/paper_figures/TIP2019.png" width="150" hight="150"></a></td>
+        <td width="20"></td>
+        <td valign="middle" width="800">
+        <p class="caption-1 "><strong><a href="https://drive.google.com/file/d/17_NTO4CkXnIMNGKnMGlfF5b_aaRYKkni/view"> Breaking Winner-Takes-All: Iterative-Winners-Out Networks for Weakly Supervised Temporal Action Localization</a> </strong></p>
+        <p class="author"> <strong>Runhao Zeng</strong>, Chuang Gan, Peihao Chen, Wenbing Huang, Qingyao Wu, Mingkui Tan</p>
+
+        <p class="content">
+        <p class="caption-2"> <strong> TIP 2019  </strong>
+        </tr>
+
+    </tbody></table>
+    </tbody></table>
+
+    <br>
+    <!-- software here -->
+    <p id="sect-software" class="title-large">Data &amp; Software</p>
+    <p class="content">&bull; <strong><a href="https://github.com/Alvin-Zeng/PGCN">PGCN.</a></strong>  Temporal Action Localizaton.</p>
+    <p class="content">&bull; <strong><a href="https://github.com/Alvin-Zeng/DRN">DRN.</a></strong>  Video Grounding.</p>
+
+    </div>
+</body>
+</html>

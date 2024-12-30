@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style type="text/css">
+        body {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            margin-left: 0px;
+            margin-right: 0px;
+          width: 100%;
+        }
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            position: sticky; /* 固定导航栏在顶部 */
+            top: 0;
+            z-index: 1000; /* 保证导航栏始终在最前 */
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    
+        .navbar a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    
+        .caption {
+            font-size: 25px;
+            font-weight: normal;
+            color: #000;
+            font-family:  Arial, sans-serif;
+        }
+        .caption-1 {
+            font-size: 18px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 3px;
+        }
+        .caption-2 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #000079;
+        }
+        .caption-3 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            font-weight: bold;
+          margin-bottom: 1px;
+            color: #F00;
+        }
+      
+        .caption-4 {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+            color: #000079;
+        }
+        .content {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 5px;
+            text-align: justify;
+        }
+        .content a {
+            font-size: 16px;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000;
+      
+        }
+        .content strong a {
+            font-size: 16px;
+          font-weight: initial;
+            font-family:  Arial, sans-serif;
+          margin-bottom: 10px;
+            color: #000079;
+        }
+      
+        .author {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          text-align: justify;
+          margin-bottom: 1px;
+        }
+        .author a {
+          font-size: 16px;
+          font-style:oblique;
+          font-family:  Arial, sans-serif;
+          color: #000;
+          margin-bottom: 1px;
+        }
+        .author strong a {
+          font-size: 16px;
+          font-style:oblique;
+          font-weight: initial;
+          font-family:  Arial, sans-serif;
+          color: #000079;
+        }
+      
+        .title-small {
+          margin-top: 20px;
+          margin-bottom: 20px;
+            font-size: 20px;
+          font-weight: bold;
+          font-family:  Arial, sans-serif;	/* font-weight: bold; */
+            color: #000;
+        }
+        .title-large {
+            font-size: 24px;
+          margin-bottom: 10px;
+          font-family:  Arial, sans-serif;
+          font-weight: bold;
+            color: #000;
+        }
+        .margin {
+            font-size: 10px;
+            line-height: 10px;
+        }
+        .margin-small {
+            font-size: 5px;
+            line-height: 5px;
+        }
+        .margin-large {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        content a:link {
+            text-decoration: none;
+        }
+        content a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:active {
+            text-decoration: underline;
+            color: #000000;
+            font-family:  Tahoma, Geneva, sans-serif;
+        }
+        strong a:active {
+            text-decoration: underline;
+            color: #000000;
+        }
+        img
+        {
+         border-color: black;
+        }
+      
+        #pubs .pubs-list {
+            display: none;
+        }
+      
+        #pubs.show-by-date .pubs-list.by-date {
+            display: block;
+        }
+      
+        #pubs.show-by-topic .pubs-list.by-topic {
+            display: block;
+        }
+      
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            text-align: center; /* 水平居中 */
+        }
+        th, td {
+            border: 1px solid #cecff5;
+            padding: 8px 12px;
+            vertical-align: middle; /* 垂直居中 */
+        }
+        th {
+            background-color: #cecff5;
+        }
+        caption-table {
+            margin: 10px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="/index.html">Home</a>
+        <a href="/sub_html/research.html">Research</a>
+        <a href="/sub_html/publications.html">Publications</a>
+        <a href="/sub_html/grants.html">Grants</a>
+        <a href="/sub_html/students.html">Students</a>
+      </div>
+
+    <div style="text-align: center; margin: 20px auto auto auto">
+        <h2 style="color: #261cda;">Grants</h2>
+        <hr style="border: 1px solid #261cda; width: 90%; margin: auto auto 20px auto;">
+    </div>
+
+    <div style="width: 1085px; margin: auto">
+        <h3 style="display: inline-block; color: #000000;">Ongoing:</h3>
+        <span style="
+            display: inline-block;
+            width: 300px; 
+            height: 20px; 
+            background: linear-gradient(to right, #cecff5, #fcfcfc77);
+            vertical-align: middle;">
+        </span>
+
+        </br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>项目名称</th>
+                    <th>项目来源</th>
+                    <th>执行时间</th>
+                    <th>项目编号</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>项目名称</td>
+                    <td>项目来源</td>
+                    <td>2020.01-2024.12</td>
+                    <td>项目编号</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>项目名称</td>
+                    <td>项目来源</td>
+                    <td>2020.01-2024.12</td>
+                    <td>项目编号</td>
+                </tr>
+                <!-- 可以继续添加更多行 -->
+            </tbody>
+        </table>
+
+        </br>
+
+        <h3 style="display: inline-block; color: #000000;">Completed:</h3>
+        <span style="
+            display: inline-block;
+            width: 300px; 
+            height: 20px; 
+            background: linear-gradient(to right, #cecff5, #fcfcfc77);
+            vertical-align: middle;">
+        </span>
+
+        </br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>项目名称</th>
+                    <th>项目来源</th>
+                    <th>执行时间</th>
+                    <th>项目编号</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>项目名称</td>
+                    <td>项目来源</td>
+                    <td>2020.01-2024.12</td>
+                    <td>项目编号</td>
+                </tr>
+                <!-- <tr>
+                    <td>2</td>
+                    <td>项目名称示例2</td>
+                    <td>项目来源示例2</td>
+                    <td>2023.01-2026.12</td>
+                    <td>编号2</td>
+                </tr> -->
+                <!-- 可以继续添加更多行 -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <div style="width: 1085px; margin: auto">
+        
+    </div>
+
+</body>
+</html>
