@@ -236,12 +236,15 @@
             color: #777;
         }
         .student-papers {
-            font-size: 10px;
-            width: 100px;   /* 宽度 */
-            height: 10px;  /* 高度 */
-            color: #777;
-            display: flex;
-            justify-content: left; 
+          width: 100px;     /* 保持与卡片同宽 */
+          min-height: 15px; /* 允许高度自适应 */
+          color: #777;
+          font-size: 10px;
+          text-align: center; /* 替代flex实现居中 */
+          white-space: normal; /* 允许自动换行 */
+          word-break: break-word; /* 强制长单词换行 */
+          margin: 2px auto;  /* 上下2px，水平自动居中 */
+          line-height: 1.2;  /* 优化多行文本阅读 */
         }
     </style>
 </head>
