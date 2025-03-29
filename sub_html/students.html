@@ -202,7 +202,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: left;
-            gap: 180px;
+            gap: 190px;
             margin: auto;
             width: 1000px;
         }
@@ -236,20 +236,24 @@
             color: #777;
         }
         .student-papers {
-            width: 100px;          /* 与卡片同宽 */
-            min-height: 15px;      /* 允许高度自适应 */
-            color: #777;
-            font-size: 10px;
-          
-            /* 新增代码：Flex容器 */
-            display: flex;
-            flex-direction: column; /* 纵向排列 */
-            justify-content: center; /* 垂直居中 */
-            align-items: center;   /* 水平居中 */
-          
-            margin: 2px auto;      /* 容器整体居中 */
-            white-space: normal;
-            word-break: break-word;
+              width: 100px;
+              min-height: 15px;
+              color: #777;
+              font-size: 10px;
+              
+              /* 弹性容器配置 */
+              display: flex;
+              flex-direction: row;     /* 水平排列 */
+              justify-content: center; /* 水平居中 */
+              align-items: center;     /* 垂直居中 */
+              
+              margin: 2px auto;
+              white-space: nowrap;     /* 禁止换行 */
+              word-break: normal;      /* 不强制断词 */
+              
+              /* 可选：溢出处理 */
+              overflow: hidden;        /* 隐藏溢出内容 [3](@ref) */
+              text-overflow: ellipsis; /* 溢出显示省略号 [3,6](@ref) */
         }
     </style>
 </head>
