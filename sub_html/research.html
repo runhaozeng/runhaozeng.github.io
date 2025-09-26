@@ -23,6 +23,9 @@
             border-radius: 10px;
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s;
+            object-fit: cover; /* 确保图片保持原始比例 */
+            max-width: 100%; /* 限制最大宽度 */
+            height: auto; /* 高度自动调整 */
         }
         .paper-thumbnail:hover {
             transform: translateY(-5px);
