@@ -6,11 +6,7 @@
 
 <title>Runhao Zeng — Embodied Affective Intelligence</title>
 <meta name="description" content="Runhao Zeng's research group studies human action understanding, affective understanding, and embodied affective intelligence.">
-<link rel="icon" href="favicon.ico">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.png">
 
 <style>
 :root{
@@ -25,8 +21,8 @@
   --soft2:#fbfbfc;
   --radius:14px;
   --shadow:0 12px 28px rgba(20,30,55,.07);
-  --serif:"Source Serif 4", Georgia, serif;
-  --sans:Inter, Arial, sans-serif;
+  --serif:Georgia, "Times New Roman", serif;
+  --sans:Arial, Helvetica, sans-serif;
 }
 
 *{box-sizing:border-box}
@@ -811,6 +807,99 @@ h1,h2,h3{font-family:var(--serif)}
   background:#fff;
 }
 
+
+.key-highlight{
+  margin: -2px 0 15px;
+  color:#c62828;
+  font-size:.86rem;
+  line-height:1.45;
+  font-weight:700;
+}
+.key-highlight::before{
+  content:"★ ";
+  font-size:.78rem;
+}
+
+
+.story-head .section-sub{display:none;}
+.story-grid{
+  margin-top:30px;
+  display:grid;
+  grid-template-columns:1fr 42px 1fr 42px 1fr;
+  align-items:stretch;
+}
+.story-card{
+  padding:18px 18px 20px;
+  color:inherit;
+}
+.story-card:hover{
+  text-decoration:none;
+  transform:translateY(-2px);
+  transition:.18s ease;
+  box-shadow:0 12px 26px rgba(28,40,66,.06);
+}
+.story-figure{
+  width:100%;
+  height:158px;
+  margin-top:8px;
+  border-radius:10px;
+  overflow:hidden;
+  background:#eef3ff;
+}
+.story-figure img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.story-card h3{
+  margin:12px 0 7px;
+  color:var(--blue);
+}
+.story-question{
+  margin:0 !important;
+  color:#202735;
+  font-size:1rem;
+  line-height:1.42;
+}
+.story-card p:last-child{display:block;}
+@media (max-width:950px){
+  .story-grid{grid-template-columns:1fr;gap:12px;}
+  .story-arrow{height:28px;transform:rotate(90deg);}
+  .story-figure{height:210px;}
+}
+
+
+.feature-static{
+  width:100%;
+  height:100%;
+  min-height:360px;
+  object-fit:cover;
+}
+.feature-static-label{
+  position:absolute;
+  left:22px;
+  bottom:20px;
+  padding:10px 14px;
+  border-radius:9px;
+  background:rgba(10,22,43,.72);
+  color:#fff;
+  backdrop-filter:blur(5px);
+}
+.feature-static-label span{
+  display:block;
+  font-size:.7rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  opacity:.82;
+}
+.feature-static-label strong{
+  display:block;
+  margin-top:1px;
+  font-family:var(--serif);
+  font-size:1.45rem;
+}
+
 </style>
 </head>
 
@@ -921,26 +1010,12 @@ h1,h2,h3{font-family:var(--serif)}
           </div>
         </div>
 
-        <div class="feature-media" aria-label="AffectSim demo">
-          <!--
-            Optional local demo:
-            1) Put your video at: imgs/affectsim/AffectSim-demo.mp4
-            2) Put a poster image at: imgs/affectsim/AffectSim-poster.jpg
-            The fallback panel below remains visible until the video loads.
-          -->
-          <video id="affectsim-video" controls muted loop playsinline preload="metadata"
-                 poster="https://arxiv.org/html/2608.25664v1/Figure2.png">
-            <source src="imgs/affectsim/AffectSim-demo.mp4" type="video/mp4">
-          </video>
-
-          <div class="media-fallback" id="affectsim-fallback">
-            <span class="mini">Embodied Affective Intelligence</span>
+        <div class="feature-media" aria-label="AffectSim featured research">
+          <img class="feature-static" src="imgs/research_vision/EmbodiedAffectiveIntelligence.png"
+               alt="Embodied affective intelligence in an interactive environment">
+          <div class="feature-static-label">
+            <span>Featured Research</span>
             <strong>AffectSim</strong>
-            <span>
-              Interactive 3D environments for studying how viewpoint, distance,
-              occlusion, and active observation shape affective perception.
-            </span>
-            <small>Demo video area</small>
           </div>
         </div>
       </div>
@@ -954,45 +1029,38 @@ h1,h2,h3{font-family:var(--serif)}
       <div class="story-head">
         <p class="section-kicker">Research Vision</p>
         <h2 class="section-title">From Human Action Understanding to Embodied Affective Intelligence</h2>
-        <p class="section-sub">
-          We study a progressive question: from observable human behavior, to latent affective states,
-          and finally to agents that can actively seek affective evidence and interact with people.
-        </p>
       </div>
 
       <div class="story-grid">
         <a class="story-card" href="#action">
           <span class="story-num">01</span>
+          <div class="story-figure">
+            <img src="imgs/research_vision/HumanActionUnderstanding.png" alt="Human action understanding">
+          </div>
           <h3>Human Action Understanding</h3>
-          <p class="story-question">What are people doing, and when?</p>
-          <p>
-            Temporal localization, grounding, long-video understanding, robustness, and efficiency
-            for dynamic human behavior.
-          </p>
+          <p class="story-question"><strong>What</strong> are people doing, and <strong>when</strong>?</p>
         </a>
 
         <div class="story-arrow" aria-hidden="true">→</div>
 
         <a class="story-card" href="#affect">
           <span class="story-num">02</span>
+          <div class="story-figure">
+            <img src="imgs/research_vision/AffectiveUnderstanding.png" alt="Affective understanding">
+          </div>
           <h3>Affective Understanding</h3>
-          <p class="story-question">How do people feel, and why?</p>
-          <p>
-            Moving from observable behavior to latent affect through body motion, temporal context,
-            multimodal evidence, and foundation models.
-          </p>
+          <p class="story-question"><strong>How</strong> do people feel, and <strong>why</strong>?</p>
         </a>
 
         <div class="story-arrow" aria-hidden="true">→</div>
 
         <a class="story-card" href="#embodied">
           <span class="story-num">03</span>
+          <div class="story-figure">
+            <img src="imgs/research_vision/EmbodiedAffectiveIntelligence.png" alt="Embodied affective intelligence">
+          </div>
           <h3>Embodied Affective Intelligence</h3>
-          <p class="story-question">What should an agent observe, and how should it interact?</p>
-          <p>
-            Active observation, simulation, embodied sensing, and interactive decision-making for
-            affective intelligence in dynamic environments.
-          </p>
+          <p class="story-question"><strong>What</strong> should an agent observe, and <strong>how</strong> should it interact?</p>
         </a>
       </div>
     </div>
@@ -1021,73 +1089,78 @@ h1,h2,h3{font-family:var(--serif)}
       <div class="paper-grid">
 
         <article class="paper-card">
-          <a href="https://arxiv.org/abs/2503.16916" target="_blank" rel="noopener">
-            <div class="paper-thumb contain">
-              <img src="imgs/paper_figures/CVPR2025_progressive_layer_drop_00.png"
-                   alt="Temporal Action Detection Model Compression">
-            </div>
+          <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Zeng_Graph_Convolutional_Networks_for_Temporal_Action_Localization_ICCV_2019_paper.html" target="_blank" rel="noopener">
+            <div class="paper-thumb contain"><img src="imgs/paper_figures/PGCN_ICCV2019.png" alt="P-GCN overview"></div>
           </a>
           <div class="paper-body">
-            <span class="venue">CVPR 2025</span>
+            <span class="venue">ICCV 2019</span>
             <h3>
-              <a href="https://arxiv.org/abs/2503.16916" target="_blank" rel="noopener">
-                Temporal Action Detection Model Compression by Progressive Block Drop
+              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Zeng_Graph_Convolutional_Networks_for_Temporal_Action_Localization_ICCV_2019_paper.html" target="_blank" rel="noopener">
+                Graph Convolutional Networks for Temporal Action Localization
               </a>
             </h3>
             <p class="highlight">
-              Compressing temporal action detection models by progressively removing redundant blocks,
-              toward efficient deployment.
+              Models action proposals as a graph and reasons over their contextual and semantic relations
+              to improve temporal action localization.
+            </p>
+            <p class="key-highlight">
+              Introduced graph-based proposal–proposal relation modeling for temporal action localization.
             </p>
             <div class="paper-links">
-              <a href="https://arxiv.org/abs/2503.16916" target="_blank" rel="noopener">Paper</a>
+              <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Zeng_Graph_Convolutional_Networks_for_Temporal_Action_Localization_ICCV_2019_paper.html" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/Alvin-Zeng/PGCN" target="_blank" rel="noopener">Code</a>
             </div>
           </div>
         </article>
 
         <article class="paper-card">
-          <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zeng_Benchmarking_the_Robustness_of_Temporal_Action_Detection_Models_Against_Temporal_CVPR_2024_paper.html" target="_blank" rel="noopener">
+          <a href="https://doi.org/10.1109/TPAMI.2021.3090167" target="_blank" rel="noopener">
+            <div class="paper-thumb contain"><img src="imgs/paper_figures/GCM_TPAMI2022.png" alt="GCM overview"></div>
+          </a>
+          <div class="paper-body">
+            <span class="venue">TPAMI 2022</span>
+            <h3>
+              <a href="https://doi.org/10.1109/TPAMI.2021.3090167" target="_blank" rel="noopener">
+                Graph Convolutional Module for Temporal Action Localization in Videos
+              </a>
+            </h3>
+            <p class="highlight">
+              Extends relation-aware action localization into a general graph module that captures
+              temporal and semantic dependencies among action units.
+            </p>
+            <p class="key-highlight">
+              A plug-and-play graph module that works across both two-stage and one-stage TAL detectors.
+            </p>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1109/TPAMI.2021.3090167" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/Alvin-Zeng/GCM" target="_blank" rel="noopener">Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="paper-card">
+          <a href="https://doi.org/10.1007/s11263-026-02956-3" target="_blank" rel="noopener">
             <div class="paper-thumb">
               <img src="imgs/paper_figures/CVPR2024.png"
-                   alt="Benchmarking temporal action detection robustness">
+                   alt="Temporal robustness benchmark for temporal action detection">
             </div>
           </a>
           <div class="paper-body">
-            <span class="venue">CVPR 2024</span>
+            <span class="venue">IJCV 2026</span>
             <h3>
-              <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zeng_Benchmarking_the_Robustness_of_Temporal_Action_Detection_Models_Against_Temporal_CVPR_2024_paper.html" target="_blank" rel="noopener">
-                Benchmarking the Robustness of Temporal Action Detection Models Against Temporal Corruptions
+              <a href="https://doi.org/10.1007/s11263-026-02956-3" target="_blank" rel="noopener">
+                Towards Robust Temporal Action Detection: Benchmark and A Strong Baseline
               </a>
             </h3>
             <p class="highlight">
-              A systematic benchmark for understanding how temporal corruptions affect action detectors
-              in realistic video conditions.
+              Systematically studies how temporal corruptions break modern action detectors and develops
+              a strong baseline for more robust temporal action detection.
+            </p>
+            <p class="key-highlight">
+              First benchmark dedicated to temporal robustness in temporal action detection.
             </p>
             <div class="paper-links">
-              <a href="https://openaccess.thecvf.com/content/CVPR2024/html/Zeng_Benchmarking_the_Robustness_of_Temporal_Action_Detection_Models_Against_Temporal_CVPR_2024_paper.html" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="paper-card">
-          <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Zeng_Dense_Regression_Network_for_Video_Grounding_CVPR_2020_paper.html" target="_blank" rel="noopener">
-            <div class="paper-thumb contain">
-              <img loading="lazy"
-                   src="https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/355403d7ce4b625307fd3ebb2beea269ecc15213/1-Figure1-1.png"
-                   alt="Illustrative example from Dense Regression Network for Video Grounding">
-            </div>
-          </a>
-          <div class="paper-body">
-            <span class="venue">CVPR 2020</span>
-            <h3>
-              <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Zeng_Dense_Regression_Network_for_Video_Grounding_CVPR_2020_paper.html" target="_blank" rel="noopener">
-                Dense Regression Network for Video Grounding
-              </a>
-            </h3>
-            <p class="highlight">
-              Localizing language-described moments in untrimmed video with dense temporal regression.
-            </p>
-            <div class="paper-links">
-              <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Zeng_Dense_Regression_Network_for_Video_Grounding_CVPR_2020_paper.html" target="_blank" rel="noopener">Paper</a>
+              <a href="https://doi.org/10.1007/s11263-026-02956-3" target="_blank" rel="noopener">Paper</a>
             </div>
           </div>
         </article>
@@ -1101,18 +1174,6 @@ h1,h2,h3{font-family:var(--serif)}
         </div>
 
         <div class="more-work-list">
-          <div class="more-work-item">
-            <span class="more-work-year">2026</span>
-            <span class="more-work-venue">IJCV</span>
-            <div class="more-work-title">
-              Towards Robust Temporal Action Detection: Benchmark and A Strong Baseline
-              <span class="work-tag">Robust TAD</span>
-            </div>
-            <div class="more-work-links">
-              <a href="https://scholar.google.com.sg/citations?user=s3X4YHwAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a>
-            </div>
-          </div>
-
           <div class="more-work-item">
             <span class="more-work-year">2025</span>
             <span class="more-work-venue">TCSVT</span>
@@ -1136,20 +1197,6 @@ h1,h2,h3{font-family:var(--serif)}
             </div>
             <div class="more-work-links">
               <a href="https://ieeexplore.ieee.org/abstract/document/10786261/" target="_blank" rel="noopener">Paper</a>
-            </div>
-          </div>
-
-          <div class="more-work-item">
-            <span class="more-work-year">2022</span>
-            <span class="more-work-venue">TPAMI</span>
-            <div class="more-work-title">
-              <a href="https://doi.org/10.1109/TPAMI.2021.3090167" target="_blank" rel="noopener">
-                Graph Convolutional Module for Temporal Action Localization in Videos
-              </a>
-              <span class="work-tag">TAD</span>
-            </div>
-            <div class="more-work-links">
-              <a href="https://doi.org/10.1109/TPAMI.2021.3090167" target="_blank" rel="noopener">Paper</a>
             </div>
           </div>
 
@@ -1211,7 +1258,7 @@ h1,h2,h3{font-family:var(--serif)}
           <a href="https://arxiv.org/abs/2605.05640" target="_blank" rel="noopener">
             <div class="paper-thumb contain">
               <img loading="lazy"
-                   src="https://arxiv.org/html/2605.05640v1/task.png"
+                   src="imgs/paper_figures/AffectSeek_2026.png"
                    alt="AffectSeek framework for agentic affective understanding in long videos">
             </div>
           </a>
@@ -1226,6 +1273,9 @@ h1,h2,h3{font-family:var(--serif)}
               An agentic framework that seeks, verifies, and explains affective moments in long videos
               under vague natural-language queries.
             </p>
+            <p class="key-highlight">
+              Introduces VQAU, a new long-video affective understanding task driven by vague user queries.
+            </p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2605.05640" target="_blank" rel="noopener">Paper</a>
             </div>
@@ -1236,7 +1286,7 @@ h1,h2,h3{font-family:var(--serif)}
           <a href="https://arxiv.org/abs/2601.15906" target="_blank" rel="noopener">
             <div class="paper-thumb contain">
               <img loading="lazy"
-                   src="https://arxiv.org/html/2601.15906v1/overall.png"
+                   src="imgs/paper_figures/AffectiveBlackBox_2026.png"
                    alt="Opening the Black Box overview for affective modeling in multimodal foundation models">
             </div>
           </a>
@@ -1250,6 +1300,9 @@ h1,h2,h3{font-family:var(--serif)}
             <p class="highlight">
               A mechanistic study of where affective adaptation is encoded inside multimodal foundation models.
             </p>
+            <p class="key-highlight">
+              Identifies the FFN gate projection as a central architectural locus of affective adaptation across models and tasks.
+            </p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2601.15906" target="_blank" rel="noopener">Paper</a>
             </div>
@@ -1260,7 +1313,7 @@ h1,h2,h3{font-family:var(--serif)}
           <a href="https://arxiv.org/abs/2608.13891" target="_blank" rel="noopener">
             <div class="paper-thumb contain">
               <img loading="lazy"
-                   src="https://arxiv.org/html/2608.13891v1/Fig1_V4.png"
+                   src="imgs/paper_figures/DepressionAgent_2026.png"
                    alt="DepressionAgent comparison of feature-level fusion and evidence-level reasoning">
             </div>
           </a>
@@ -1273,6 +1326,9 @@ h1,h2,h3{font-family:var(--serif)}
             </h3>
             <p class="highlight">
               An agentic multimodal framework that integrates textual, acoustic, and visual evidence and explicitly deliberates across modalities for depression risk assessment.
+            </p>
+            <p class="key-highlight">
+              Transforms multimodal depression assessment from implicit feature fusion into explicit evidence deliberation.
             </p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2608.13891" target="_blank" rel="noopener">Paper</a>
@@ -1353,7 +1409,7 @@ h1,h2,h3{font-family:var(--serif)}
           <a href="https://arxiv.org/abs/2608.25664" target="_blank" rel="noopener">
             <div class="paper-thumb contain">
               <img loading="lazy"
-                   src="https://arxiv.org/html/2608.25664v1/Figure2.png"
+                   src="imgs/paper_figures/AffectSim_2026.png"
                    alt="AffectSim comparison of predetermined and active embodied emotion perception">
             </div>
           </a>
@@ -1367,6 +1423,9 @@ h1,h2,h3{font-family:var(--serif)}
             <p class="highlight">
               A simulation benchmark in which affective behavior can be re-observed under controllable
               viewpoints and agent-controlled sensing.
+            </p>
+            <p class="key-highlight">
+              Introduces a controllable interactive 3D benchmark for studying embodied affective perception through active observation.
             </p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2608.25664" target="_blank" rel="noopener">Paper</a>
@@ -1391,6 +1450,9 @@ h1,h2,h3{font-family:var(--serif)}
               Learning robot behavior by turning visual demonstrations into reward functions,
               connecting video understanding with embodied action.
             </p>
+            <p class="key-highlight">
+              Generates executable reward functions from demonstration videos, bridging visual understanding and robot skill learning.
+            </p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2412.05515" target="_blank" rel="noopener">Paper</a>
             </div>
@@ -1412,6 +1474,9 @@ h1,h2,h3{font-family:var(--serif)}
             </h3>
             <p class="highlight">
               Co-evolving reward functions and policies for language-instructed embodied skill acquisition.
+            </p>
+            <p class="key-highlight">
+              Jointly co-evolves reward functions and policies from language instructions to reduce manual reward engineering.
             </p>
             <div class="paper-links">
               <a href="https://arxiv.org/abs/2412.13492" target="_blank" rel="noopener">Paper</a>
@@ -1579,6 +1644,15 @@ h1,h2,h3{font-family:var(--serif)}
           <div>
             <h3 class="pub-title"><a href="https://doi.org/10.1007/s11263-026-02956-3" target="_blank" rel="noopener">Towards Robust Temporal Action Detection: Benchmark and A Strong Baseline</a><span class="pub-badge">Robust TAD</span></h3>
             <p class="pub-authors"><strong>Runhao Zeng</strong>, Jiaming Liang, Jiaqi Mao, Xiaoyong Chen, Wei Wang, Yong Guo, Limin Wang, Victor C. M. Leung, Xiping Hu</p>
+          </div>
+        </article>
+
+        <article class="pub-item" data-cat="affect">
+          <div class="pub-year">2026</div>
+          <div class="pub-venue">arXiv</div>
+          <div>
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2608.13891" target="_blank" rel="noopener">DepressionAgent: Reading, Listening, Seeing, and Deliberating Multimodal Evidence for Depression Risk Assessment</a><span class="pub-badge">Multimodal Agent</span></h3>
+            <p class="pub-authors">Fangjie Zhu, Haifeng Lu, Sicheng Zhao, <strong>Runhao Zeng</strong>, Xiping Hu</p>
           </div>
         </article>
 
@@ -1958,22 +2032,6 @@ h1,h2,h3{font-family:var(--serif)}
   </footer>
 
 </main>
-
-<script>
-(function(){
-  const video = document.getElementById("affectsim-video");
-  const fallback = document.getElementById("affectsim-fallback");
-  if (!video || !fallback) return;
-
-  const hideFallback = () => {
-    fallback.style.display = "none";
-  };
-
-  video.addEventListener("loadeddata", hideFallback);
-  video.addEventListener("canplay", hideFallback);
-})();
-</script>
-
 
 <script>
 (function(){
